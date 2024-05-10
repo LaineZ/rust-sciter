@@ -284,8 +284,8 @@ pub fn handle_message(wnd: HWINDOW, event: Message) -> bool
 
 			extern "system" fn inner(rgba: LPCBYTE, x: INT, y: INT, width: UINT, height: UINT, param: LPVOID)
 			{
-				assert!(!param.is_null());
-				assert!(!rgba.is_null());
+				//assert!(!param.is_null());
+				//assert!(!rgba.is_null());
 				if param.is_null() || rgba.is_null() { return; }
 
 				let bitmap_area = RECT {
